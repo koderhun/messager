@@ -6,6 +6,9 @@ var browserify = require('gulp-browserify');
 var concat = require('gulp-concat');
 var spritesmith = require('gulp.spritesmith');
 var imagemin = require('gulp-imagemin');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 
 // обработка jade
 gulp.task('templates', function() {
@@ -20,8 +23,13 @@ gulp.task('templates', function() {
 
 // Обработка scss
 gulp.task('sass', function () {
+  var processors = [
+    autoprefixer({browsers: ['last 3 version']}),
+    cssnano(),
+  ];
   return gulp.src('./assets/scss/**/app.scss')
     .pipe(sass().on('error', sass.logError))
+    .pipe(postcss(processors))
     .pipe(gulp.dest('./build/css'))
     .pipe(browserSync.stream()); // перезагрузка сервера
 });
