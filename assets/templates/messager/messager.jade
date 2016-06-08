@@ -1,0 +1,5 @@
+include ../msg/msg.jade
+include ../dialog/dialog.jade
+//- +dialog('user3.png', 'user2.png', 'Jonathan')
+each item in users
+  +dialog(item.imgmin, item.imgbig, 'user2.png', item.name)(class=item.tabstatus)

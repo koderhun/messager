@@ -1,0 +1,15 @@
+
+html
+
+  include partials/head.jade
+  
+  body
+    include partials/header.jade
+    main.main
+      .row
+        .col-2
+          include user/list.jade
+        .col-10
+          include messager/messager.jade  
+    script(src='/js/app.js') 
+ 

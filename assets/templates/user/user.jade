@@ -1,0 +1,6 @@
+mixin user(name, src, href)
+  a.user(class!=attributes.class, href=href)
+    .user__avatar
+      .status
+      img.user__img(src=src)
+    .user__title= name

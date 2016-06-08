@@ -1,0 +1,184 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$icon-arrow-left-name: 'icon_arrow-left';
+$icon-arrow-left-x: 118px;
+$icon-arrow-left-y: 53px;
+$icon-arrow-left-offset-x: -118px;
+$icon-arrow-left-offset-y: -53px;
+$icon-arrow-left-width: 11px;
+$icon-arrow-left-height: 19px;
+$icon-arrow-left-total-width: 134px;
+$icon-arrow-left-total-height: 122px;
+$icon-arrow-left-image: '/img/sprite.png';
+$icon-arrow-left: (118px, 53px, -118px, -53px, 11px, 19px, 134px, 122px, '/img/sprite.png', 'icon_arrow-left', );
+$icon-attach-name: 'icon_attach';
+$icon-attach-x: 0px;
+$icon-attach-y: 0px;
+$icon-attach-offset-x: 0px;
+$icon-attach-offset-y: 0px;
+$icon-attach-width: 26px;
+$icon-attach-height: 21px;
+$icon-attach-total-width: 134px;
+$icon-attach-total-height: 122px;
+$icon-attach-image: '/img/sprite.png';
+$icon-attach: (0px, 0px, 0px, 0px, 26px, 21px, 134px, 122px, '/img/sprite.png', 'icon_attach', );
+$icon-cell-name: 'icon_cell';
+$icon-cell-x: 0px;
+$icon-cell-y: 51px;
+$icon-cell-offset-x: 0px;
+$icon-cell-offset-y: -51px;
+$icon-cell-width: 21px;
+$icon-cell-height: 22px;
+$icon-cell-total-width: 134px;
+$icon-cell-total-height: 122px;
+$icon-cell-image: '/img/sprite.png';
+$icon-cell: (0px, 51px, 0px, -51px, 21px, 22px, 134px, 122px, '/img/sprite.png', 'icon_cell', );
+$icon-copy-name: 'icon_copy';
+$icon-copy-x: 51px;
+$icon-copy-y: 51px;
+$icon-copy-offset-x: -51px;
+$icon-copy-offset-y: -51px;
+$icon-copy-width: 23px;
+$icon-copy-height: 18px;
+$icon-copy-total-width: 134px;
+$icon-copy-total-height: 122px;
+$icon-copy-image: '/img/sprite.png';
+$icon-copy: (51px, 51px, -51px, -51px, 23px, 18px, 134px, 122px, '/img/sprite.png', 'icon_copy', );
+$icon-menu-name: 'icon_menu';
+$icon-menu-x: 56px;
+$icon-menu-y: 0px;
+$icon-menu-offset-x: -56px;
+$icon-menu-offset-y: 0px;
+$icon-menu-width: 32px;
+$icon-menu-height: 16px;
+$icon-menu-total-width: 134px;
+$icon-menu-total-height: 122px;
+$icon-menu-image: '/img/sprite.png';
+$icon-menu: (56px, 0px, -56px, 0px, 32px, 16px, 134px, 122px, '/img/sprite.png', 'icon_menu', );
+$icon-msg-name: 'icon_msg';
+$icon-msg-x: 49px;
+$icon-msg-y: 103px;
+$icon-msg-offset-x: -49px;
+$icon-msg-offset-y: -103px;
+$icon-msg-width: 20px;
+$icon-msg-height: 18px;
+$icon-msg-total-width: 134px;
+$icon-msg-total-height: 122px;
+$icon-msg-image: '/img/sprite.png';
+$icon-msg: (49px, 103px, -49px, -103px, 20px, 18px, 134px, 122px, '/img/sprite.png', 'icon_msg', );
+$icon-speak-name: 'icon_speak';
+$icon-speak-x: 118px;
+$icon-speak-y: 0px;
+$icon-speak-offset-x: -118px;
+$icon-speak-offset-y: 0px;
+$icon-speak-width: 16px;
+$icon-speak-height: 23px;
+$icon-speak-total-width: 134px;
+$icon-speak-total-height: 122px;
+$icon-speak-image: '/img/sprite.png';
+$icon-speak: (118px, 0px, -118px, 0px, 16px, 23px, 134px, 122px, '/img/sprite.png', 'icon_speak', );
+$icon-video-name: 'icon_video';
+$icon-video-x: 99px;
+$icon-video-y: 103px;
+$icon-video-offset-x: -99px;
+$icon-video-offset-y: -103px;
+$icon-video-width: 23px;
+$icon-video-height: 14px;
+$icon-video-total-width: 134px;
+$icon-video-total-height: 122px;
+$icon-video-image: '/img/sprite.png';
+$icon-video: (99px, 103px, -99px, -103px, 23px, 14px, 134px, 122px, '/img/sprite.png', 'icon_video', );
+$icon-write-msg-name: 'icon_write-msg';
+$icon-write-msg-x: 0px;
+$icon-write-msg-y: 103px;
+$icon-write-msg-offset-x: 0px;
+$icon-write-msg-offset-y: -103px;
+$icon-write-msg-width: 19px;
+$icon-write-msg-height: 19px;
+$icon-write-msg-total-width: 134px;
+$icon-write-msg-total-height: 122px;
+$icon-write-msg-image: '/img/sprite.png';
+$icon-write-msg: (0px, 103px, 0px, -103px, 19px, 19px, 134px, 122px, '/img/sprite.png', 'icon_write-msg', );
+$spritesheet-width: 134px;
+$spritesheet-height: 122px;
+$spritesheet-image: '/img/sprite.png';
+$spritesheet-sprites: ($icon-arrow-left, $icon-attach, $icon-cell, $icon-copy, $icon-menu, $icon-msg, $icon-speak, $icon-video, $icon-write-msg, );
+$spritesheet: (134px, 122px, '/img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

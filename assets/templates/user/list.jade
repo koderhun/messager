@@ -1,0 +1,5 @@
+include user.jade
+//- - var userlist = [{name: 'Bob',img: 'user1.png', status: 'info'}, {name: 'Jarry',img: 'user2.png', status: ''},{name: 'Jonathan',img: 'user3.png', status: '', active: 'active'},{name: 'Mike',img: 'user4.png', status: 'warning'},{name: 'Suzanne',img: 'user5.png', status: ''},{name: 'Tom',img: 'user6.png', status: 'success'}]
+.userlist
+	each item in users
+		+user(item.name, '/img/'+item.imgmin, '')(class=item.tabstatus)(class=item.status)

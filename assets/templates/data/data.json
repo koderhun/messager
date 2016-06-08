@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "name": "Bob",
+      "imgmin": "user1.png",
+      "imgbig": "",
+      "status": "info",
+      "tabstatus": ""
+    },
+    {
+      "name": "Jarry",
+      "imgmin": "user2.png",
+      "imgbig": "",
+      "status": "",
+      "tabstatus": ""
+    },
+    {
+      "name": "Jonathan",
+      "imgmin": "user3.png",
+      "imgbig": "user3-big.png",
+      "status": "",
+      "tabstatus": "active"
+    },
+    {
+      "name": "Mike",
+      "imgmin": "user4.png",
+      "imgbig": "",
+      "status": "warning",
+      "tabstatus": ""
+    },
+    {
+      "name": "Suzanne",
+      "imgmin": "user5.png",
+      "imgbig": "",
+      "status": "",
+      "tabstatus": ""
+    },
+    {
+      "name": "Tom",
+      "imgmin": "user6.png",
+      "imgbig": "",
+      "status": "success",
+      "tabstatus": ""
+    }
+  ]
+}

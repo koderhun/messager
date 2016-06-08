@@ -1,0 +1,22 @@
+mixin dialog(incomingimg, incomingimgbig, outgoingimg, incomingname)
+  .row.dialog-wrapper(class!=attributes.class)
+    .col-8.dialog
+      .msg-list
+        +msg('/img/'+incomingimg)(class='incoming')
+        +msg('/img/'+outgoingimg)(class='outgoing')
+      include ../field/field.jade
+    .col-4.phone-control
+      .headcontrol
+        .headname= incomingname
+        .btngroup
+          a.btn.btn-comment(title="Комментарии")
+          a.btn.btn-video
+          a.btn.btn-cell
+      .avatarbig
+        if (incomingimgbig == "")
+          img.avatarbig-img(src="/img/"+incomingimg, alt="")
+        else
+          img.avatarbig-img(src="/img/"+incomingimgbig, alt="")
+      .voice-control
+        .btn.btn-accept(title="Принять")
+        .btn.btn-reject(title="Отменить") 
