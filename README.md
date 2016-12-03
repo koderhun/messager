@@ -1,6 +1,9 @@
 # Messager
 
 
+Ссылка на работающею страницу 
+http://rtxrulez.github.io/messager/build/
+
 ### Установка nodejs модулей
 
 ```
